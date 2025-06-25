@@ -1,14 +1,17 @@
 import React from "react";
 
 function App() {
-  const arr = [1, 2, 3, 4, 5];
+  const obj = {
+    name: "John",
+    surname: "Smith",
+  };
 
   return (
-    <ul>
-      {arr.map((el) => (
-        <li>{el}</li>
-      ))}
-    </ul>
+    <p>
+      name: <span>{obj.name}</span>
+      <br />
+      surname: <span>{obj.surname}</span>
+    </p>
   );
 }
 
