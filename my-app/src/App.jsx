@@ -1,14 +1,14 @@
 import React from "react";
 
 function App() {
-  const str1 = "text1";
-  const str2 = "text2";
+  const arr = [1, 2, 3, 4, 5];
 
   return (
-    <div>
-      <p>{str1}</p>
-      <p>{str2}</p>
-    </div>
+    <ul>
+      {arr.map((el) => (
+        <li>{el}</li>
+      ))}
+    </ul>
   );
 }
 
