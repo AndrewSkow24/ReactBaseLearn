@@ -1,8 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
+import Component07 from "./components/Component07";
 
 function App() {
-  // код компонента
-  return <div>text</div>;
+  return (
+    <>
+      <h1>Учебник React</h1>
+    </>
+  );
 }
 
 export default App;
