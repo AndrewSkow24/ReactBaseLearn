@@ -1,14 +1,10 @@
 import React from "react";
 
 function App() {
-  return (
-    <div>
-      text <br />
-      <input type="text" placeholder="placeholder1" /> <br />
-      <input type="text" placeholder="placeholder1" /> <br />
-      <input type="text" placeholder="placeholder1" /> <br />
-    </div>
-  );
+  const num1 = 1;
+  const num2 = 2;
+
+  return <div>{num1 + num2}</div>;
 }
 
 export default App;
