@@ -1,18 +1,17 @@
 import React from "react";
 
 function App() {
-  const obj = {
-    name: "John",
-    surname: "Smith",
-  };
+  const li1 = <li>text1</li>;
+  const li2 = <li>text2</li>;
+  const li3 = <li>text3</li>;
 
-  return (
-    <p>
-      name: <span>{obj.name}</span>
-      <br />
-      surname: <span>{obj.surname}</span>
-    </p>
+  const ul = (
+    <ul>
+      {li1} {li2} {li3}
+    </ul>
   );
+
+  return ul;
 }
 
 export default App;
