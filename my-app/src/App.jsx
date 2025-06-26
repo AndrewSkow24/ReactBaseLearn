@@ -1,14 +1,14 @@
 import React from "react";
 
 function App() {
-  const items = (
-    <>
-      <li>text1</li>
-      <li>text2</li>
-      <li>text3</li>
-    </>
+  return (
+    <div>
+      text <br />
+      <input type="text" placeholder="placeholder1" /> <br />
+      <input type="text" placeholder="placeholder1" /> <br />
+      <input type="text" placeholder="placeholder1" /> <br />
+    </div>
   );
-  return <ul>{items}</ul>;
 }
 
 export default App;
