@@ -1,21 +1,14 @@
 import React from "react";
 
 function App() {
-  function getDigitsSum(num) {
-    let numInString = String(num);
-    let sumOfNum = 0;
-    for (let i = 0; i < numInString.length; i++) {
-      console.log(numInString[i]);
-      sumOfNum += Number(numInString[i]);
-    }
-
-    return sumOfNum;
+  function showNumber(num) {
+    alert(num);
   }
-
   return (
     <div>
-      <p>Сумма цифр числа 123 составляет: {getDigitsSum(123)} </p>
-      <p>Сумма цифр числа 57 составляет: {getDigitsSum(57)} </p>
+      <button onClick={() => showNumber(1)}>act1</button>
+      <button onClick={() => showNumber(2)}>act2</button>
+      <button onClick={() => showNumber(3)}>act3</button>
     </div>
   );
 }
