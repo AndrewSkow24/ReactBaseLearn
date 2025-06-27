@@ -1,17 +1,7 @@
 import React from "react";
 
 function App() {
-  function func(arg1, event, arg2) {
-    console.log(arg1, event, arg2);
-  }
-
-  return (
-    <div>
-      <button onClick={(event) => func("аргумент 1", event, "аргумент 2")}>
-        Кнопка
-      </button>
-    </div>
-  );
+  const arr = [<li>1</li>, <li>2</li>, <li>3</li>, <li>4</li>, <li>5</li>];
+  return <ul>{arr}</ul>;
 }
-
 export default App;
