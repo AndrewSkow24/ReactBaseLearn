@@ -1,7 +1,12 @@
 import React from "react";
 
 function App() {
-  const arr = [<li>1</li>, <li>2</li>, <li>3</li>, <li>4</li>, <li>5</li>];
-  return <ul>{arr}</ul>;
+  const arr = ["a", "b", "c", "d", "e"];
+  const res = arr.map(function (item, index) {
+    return <li key={index}>{item}</li>;
+  });
+
+  return <ul>{res}</ul>;
 }
+
 export default App;
