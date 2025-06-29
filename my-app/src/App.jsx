@@ -7,16 +7,27 @@ const users = [
 ];
 
 function App() {
+  const rows = users.map((item) => {
+    return (
+      <tr key={item.id}>
+        <td>{item.name}</td>
+        <td>{item.surn}</td>
+        <td>{item.age}</td>
+      </tr>
+    );
+  });
+
   return (
-    <ul>
-      {users.map((item) => {
-        return (
-          <li key={item.id}>
-            {item.name} {item.surn} {item.age}
-          </li>
-        );
-      })}
-    </ul>
+    <table>
+      <thead>
+        <tr>
+          <td>Имя</td>
+          <td>Фамилия</td>
+          <td>Возраст</td>
+        </tr>
+      </thead>
+      <tbody>{rows}</tbody>
+    </table>
   );
 }
 
